@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Set the style for the Main container div */
+.main-container {
+  width: 85vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #3451A1;
+  box-shadow: 10px 10px 7px rgb(138, 126, 126);
+}
+
+/* Set the style for heading of the app */
+h1{
+  text-align: center;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-shadow: 5px 5px #514242;
+}

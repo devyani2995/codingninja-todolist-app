@@ -1,0 +1,32 @@
+.container{ 
+    width: 90%;
+    max-height: 63%;
+    margin-top: 8vh;
+    margin-left: 4vw;
+    padding: 5px;
+    background-color: #162993;
+    overflow-y: scroll;
+    box-shadow: 4px 4px 4px #673AB7 inset;
+}
+
+.task{
+    width: 90%;
+    height: 5vh;
+    margin: auto;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    padding: 7px 19px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #051956;
+    color: #DBE2FF;
+}
+
+.iconContainer{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}

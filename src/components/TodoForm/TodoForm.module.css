@@ -1,0 +1,26 @@
+/* Style for the Form element to centers the form elements horizontally */
+form {
+    display: flex;
+    justify-content: center;
+}
+
+/* Set the style for the Form input field */
+.formInput {
+    font-size: 17px;
+    width: 46vw;
+    height: 4vh;
+    padding: 4px;
+}
+
+/* Style for the Form button */
+button {
+    background: #67159A;
+    border: none;
+    color: #dacece;
+    font-size: medium;
+}
+
+/* Style for changing the background color when hovers over the button */
+button:hover{
+    background: #7c4c99;
+}
