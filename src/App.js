@@ -30,18 +30,23 @@ function App() {
 
   // For adding a new todo item
   async function addTodo(title) {
+    // Call API to add a new task
     const data = await addTaskHandler(title, userId);
+    // If the task added successfully, update state and show success message
     if (data.success) {
       setTodo([data.data, ...todos]);
       toast.success("Task added succesfully");
     } else {
+      // If the task addition failed, show error message
       toast.error(data.message);
     }
   }
 
   // For deleting a todo item
   async function deleteTodo(id) {
+    // Call API to delete a task
     const result = await deleteTaskHandler(id);
+    // If the task deleted successfully, update state and show success message
     if (result.success) {
       const todo = todos.filter((data) => {
         return data.id !== id;
@@ -49,12 +54,14 @@ function App() {
       setTodo(todo);
       toast.success("Task deleted succesfully");
     } else {
+      // If the deletion failed, show error message
       toast.error(result.message);
     }
   }
 
   //For updating a todo item
   async function updateTodo(task, requested) {
+    // If the user requested to edit, enable edit mode and store the task in state
     if (requested) {
       setisEdit({
         edit: true,
@@ -62,12 +69,17 @@ function App() {
       });
       return;
     }
+    // Call API to update a task
     const data = await updateTaskHandler(task);
+    // If the task updated successful, show success message
     if (data.success) {
       toast.success("Task updated succesfully")
     } else {
+      // If the update failed, show error message
       toast.error(data.message);
     }
+
+    // Reset the edit mode after the update is done
     setisEdit({
       edit: false,
       task: {},
