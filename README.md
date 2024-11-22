@@ -1,5 +1,5 @@
 # TodoList App
-Simple todo app built with the React framework.
+Simple todo app built with the React framework.It display the list of all Todo items.Also a user can add a new task,update and delete a particular task.
 
 ## Features
 
