@@ -20,7 +20,7 @@ Simple todo app built with the React framework.
 ## Steps to Install and Run
 
 1. **Clone the repository**:
-   git clone https://github.com/devyani2995/todo-app.git
+   git clone https://github.com/devyani2995/codingninja-todolist-app.git
    cd todo-app
 
 2. **Install dependencies**:
