@@ -21,7 +21,7 @@ Simple todo app built with the React framework.
 
 1. **Clone the repository**:
    git clone https://github.com/devyani2995/codingninja-todolist-app.git
-   cd todo-app
+   cd codingninja-todolist-app
 
 2. **Install dependencies**:
    npm install
